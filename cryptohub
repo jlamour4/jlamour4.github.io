@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CryptoHub | All-In-One Crypto-Resource</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <style>
+        div.graph-container {
+            background-color: grey;
+            height: 600px;
+        }
+
+        div.new-reddit-posts {
+            width: 600px;
+        }
+
+        body {
+            background-color: #626cb3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="display-2">Crypto Hub</h1>
+                <p class="lead">All-in-One Resource for Crypto Markets</p>
+                <hr class="my-2">
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <h2 class="well well-sm">Litecoin</h2>
+        <div class="graph-container col-md-8">
+            <!-- TradingView Widget BEGIN -->
+            <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "autosize": true,
+                    "symbol": "KRAKEN:LTCUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "White",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "hideideas": true,
+                    "show_popup_button": true,
+                    "popup_width": "1000",
+                    "popup_height": "650"
+                });
+            </script>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="reddit-stream col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Livestream of Reddit Discussion</h3>
+                </div>
+                <div class="panel-body">
+                    <iframe src="https://www.reddit-stream.com/comments/69cihm/" width="100%" height="530px"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="new-reddit-posts col-md-4">
+            <script src="https://www.reddit.com/r/LitecoinMarkets/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 class="well well-sm">Bitcoin</h2>
+        <div class="graph-container col-md-8">
+            <!-- TradingView Widget BEGIN -->
+            <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "autosize": true,
+                    "symbol": "KRAKEN:XBTUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "White",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "hideideas": true,
+                    "show_popup_button": true,
+                    "popup_width": "1000",
+                    "popup_height": "650"
+                });
+            </script>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="reddit-stream col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Livestream of Reddit Discussion</h3>
+                </div>
+                <div class="panel-body">
+                    <iframe src="https://www.reddit-stream.com/comments/69cid0/" width="100%" height="530px"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="new-reddit-posts col-md-4">
+            <script src="https://www.reddit.com/r/BitcoinMarkets/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 class="well well-sm">Ethereum</h2>
+        <div class="graph-container col-md-8">
+            <!-- TradingView Widget BEGIN -->
+            <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "autosize": true,
+                    "symbol": "KRAKEN:ETHUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "White",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "hideideas": true,
+                    "show_popup_button": true,
+                    "popup_width": "1000",
+                    "popup_height": "650"
+                });
+            </script>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="reddit-stream col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Livestream of Reddit Discussion</h3>
+                </div>
+                <div class="panel-body">
+                    <iframe src="https://www.reddit-stream.com/comments/695tno/" width="100%" height="530px"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="new-reddit-posts col-md-4">
+            <script src="https://www.reddit.com/r/ethtrader/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
+        </div>
+    </div>
+</body>
+
+</html>
