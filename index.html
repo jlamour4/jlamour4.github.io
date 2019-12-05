@@ -1,162 +1,80 @@
-<!doctype html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CryptoHub | All-In-One Crypto-Resource</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <style>
-    div.graph-container {
-            background-color: grey;
-            height: 600px;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://zcole.me/img/favicon.png">
+  <!-- Social share meta tags -->
+  <meta property="og:title" content="Joshua Lamour">
+  <meta property="og:description" content="Joshua Lamour is a designer and front-end developer who also loves to run very far.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://zcole.me/img/social-share.png">
+  <meta property="og:site_name" content="Joshua Lamour">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zach Cole">
+  <meta name="twitter:description" content="Zach Cole is a designer and front-end developer who also loves to run very far.">
+  <meta name="twitter:image:src" content="http://zcole.me/img/social-share.png">
+  <!-- End social share meta tags -->
+  <link rel="stylesheet" href="http://zcole.me/reset.css">
+  <link rel="stylesheet" href="http://zcole.me/simple-grid.css">
+  <link rel="stylesheet" href="http://zcole.me/zcoleme2019.css">
+  <title>Joshua Lamour | My Portfolio</title>
+  <meta name="description" content="Joshua Lamour is a designer and front-end developer who also loves to run very far.">
+  <!-- Start GA Tracking -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        div.new-reddit-posts {
-            width: 600px;
-        }
+    ga('create', 'UA-77450858-1', 'auto');
+    ga('send', 'pageview');
 
-        body {
-            background-color: #626cb3;
-        }
-    </style>
+  </script>
+  <!-- End GA Tracking -->
 </head>
-
-<body>
-  <header>
-    <div class="container-fluid">
-      <div class="jumbotron">
-        <h1 class="display-2">Crypto Hub</h1>
-        <p class="lead">All-in-One Resource for Crypto Markets</p>
-        <hr class="my-2">
-      </div>
-    </div>
-  </header>
-  <div class="container-fluid">
-    <h2 class="well well-sm">Litecoin</h2>
-    <div class="graph-container col-md-8">
-      <!-- TradingView Widget BEGIN -->
-      <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-      <script type="text/javascript">
-        new TradingView.widget({
-          "autosize": true,
-          "symbol": "KRAKEN:LTCUSD",
-          "interval": "D",
-          "timezone": "Etc/UTC",
-          "theme": "White",
-          "style": "1",
-          "locale": "en",
-          "toolbar_bg": "#f1f3f6",
-          "enable_publishing": false,
-          "allow_symbol_change": true,
-          "hideideas": true,
-          "show_popup_button": true,
-          "popup_width": "1000",
-          "popup_height": "650"
-        });
-      </script>
-      <!-- TradingView Widget END -->
-    </div>
-    <div class="reddit-stream col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Livestream of Reddit Discussion</h3>
+<body class="dark">
+  <section class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-4-sm">
+          <li><a href="/index.html" title="Home" class="type-white">Joshua Lamour</a></li>
         </div>
-        <div class="panel-body">
-          <iframe src="https://www.reddit-stream.com/comments/69cihm/" width="100%" height="530px"></iframe>
+        <div class="col-9 col-8-sm align-r">
+          <li><a href="/work" title="Work" class="type-white">Work</a></li>
+          <li><a href="/about" title="About" class="type-white">About</a></li>
+          <li><a href="/hello" title="Hello" class="type-white">Hello</a></li>
         </div>
       </div>
     </div>
-    <div class="new-reddit-posts col-md-4">
-      <script src="https://www.reddit.com/r/LitecoinMarkets/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <h2 class="well well-sm">Bitcoin</h2>
-    <div class="graph-container col-md-8">
-      <!-- TradingView Widget BEGIN -->
-      <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-      <script type="text/javascript">
-        new TradingView.widget({
-          "autosize": true,
-          "symbol": "KRAKEN:XBTUSD",
-          "interval": "D",
-          "timezone": "Etc/UTC",
-          "theme": "White",
-          "style": "1",
-          "locale": "en",
-          "toolbar_bg": "#f1f3f6",
-          "enable_publishing": false,
-          "allow_symbol_change": true,
-          "hideideas": true,
-          "show_popup_button": true,
-          "popup_width": "1000",
-          "popup_height": "650"
-        });
-      </script>
-      <!-- TradingView Widget END -->
-    </div>
-    <div class="reddit-stream col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Livestream of Reddit Discussion</h3>
-        </div>
-        <div class="panel-body">
-          <iframe src="https://www.reddit-stream.com/comments/69cid0/" width="100%" height="530px"></iframe>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="x-large type-white">I am a multidisciplinary designer, specializing in mobile product design, web design and development, branding, and illustration.</p>
+          <p class="x-large type-white">Other times, you can find me trying to run very far, very fast.</p>
         </div>
       </div>
     </div>
-    <div class="new-reddit-posts col-md-4">
-      <script src="https://www.reddit.com/r/BitcoinMarkets/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <h2 class="well well-sm">Ethereum</h2>
-    <div class="graph-container col-md-8">
-      <!-- TradingView Widget BEGIN -->
-      <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
-      <script type="text/javascript">
-        new TradingView.widget({
-          "autosize": true,
-          "symbol": "KRAKEN:ETHUSD",
-          "interval": "D",
-          "timezone": "Etc/UTC",
-          "theme": "White",
-          "style": "1",
-          "locale": "en",
-          "toolbar_bg": "#f1f3f6",
-          "enable_publishing": false,
-          "allow_symbol_change": true,
-          "hideideas": true,
-          "show_popup_button": true,
-          "popup_width": "1000",
-          "popup_height": "650"
-        });
-      </script>
-      <!-- TradingView Widget END -->
-    </div>
-    <div class="reddit-stream col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Livestream of Reddit Discussion</h3>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <p class="label type-white">Why don't you see some</p>
+          <p><a href="/work" title="Work" class="heavy type-white">Work</a></p>
         </div>
-        <div class="panel-body">
-          <iframe src="https://www.reddit-stream.com/comments/695tno/" width="100%" height="530px"></iframe>
+        <div class="col-4">
+          <p class="label type-white">Want to learn more</p>
+          <p><a href="/about" title="About" class="heavy type-white">About me</a></p>
+        </div>
+        <div class="col-4">
+          <p class="label type-white">How about we say</p>
+          <p><a href="/hello" title="Hello" class="heavy type-white">Hello</a></p>
         </div>
       </div>
     </div>
-    <div class="new-reddit-posts col-md-4">
-      <script src="https://www.reddit.com/r/ethtrader/new/.embed?limit=10&t=all&sort=new&bgcolor=FFFFFF&twocolumn=true" type="text/javascript"></script>
-    </div>
-  </div>
+  </section>
 </body>
-
-</html>
