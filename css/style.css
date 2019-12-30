@@ -1,0 +1,606 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background-color: #161618;
+}
+
+.highlight {
+  color: #04CA83;
+}
+/* ROOT FONT STYLES */
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-family: 'ObjectSans-Heavy', Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-top: 44px;
+}
+
+h2 {
+  font-family: 'ObjectSans-Heavy', Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+p {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
+p.x-large {
+  font-size: 1.8rem;
+  line-height: 1.425;
+}
+
+p.label {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p.med {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+p.small {
+  font-size: 0.825rem;
+  line-height: 1.8;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+li.large {
+  font-size: 1.75rem;
+  line-height: 2;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li {
+  margin-right: 16px;
+}
+
+.navigation li:last-of-type {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #04CA83;
+}
+
+.heavy {
+  font-family: 'ObjectSans-Heavy', Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* CONTENT */
+
+.featured-project p,
+.featured-project div {
+  transition: all 0.3s ease;
+}
+
+.featured-project:hover p {
+  color: #04CA83;
+}
+
+.featured-project:hover div {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+/************************
+***** MEDIA QUERIES *****
+*************************/
+
+@media only screen and (min-width: 540px) {
+
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 2.125rem;
+    line-height: 1.4;
+    margin-top: 32px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.75;
+  }
+
+  p {
+    font-size: 2.125rem;
+    line-height: 1.6;
+  }
+
+  p.x-large {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  p.label {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  p.med {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+
+  p.small {
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-right: 40px;
+  }
+
+  li.large {
+    font-size: 2.125rem;
+    line-height: 2;
+  }
+
+@media only screen and (min-width: 720px) {
+
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.75;
+  }
+
+  p {
+    font-size: 2.25rem;
+    line-height: 1.6;
+  }
+
+  p.x-large {
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+
+  p.label {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  p.med {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+
+  p.small {
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  li.large {
+    font-size: 2.125rem;
+    line-height: 2;
+  }
+
+  .navigation li {
+    margin-right: 40px;
+  }
+
+  /* ACCESSORY */
+
+  .spacer {
+    height: 80px;
+  }
+
+  .item-1 {
+    order: 1
+  }
+
+  .item-2 {
+    order: 2
+  }
+
+  .item-3 {
+    order: 3
+  }
+
+  .item-4 {
+    order: 4
+  }
+
+  /* CONTENT */
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+
+  /* IMAGES */
+
+  .img-edu-8 {
+    margin-bottom: 64px;
+  }
+
+  .img-lyft-gift-1 {
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+
+  .img-lyft-gift-2 {
+    margin-bottom: 80px;
+  }
+
+  .img-brooks-1 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media only screen and (min-width: 1094px) {
+
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-top: 44px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.75;
+  }
+
+  p {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+
+  p.x-large {
+    font-size: 5rem;
+    line-height: 1.4;
+  }
+
+  p.label {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  p.med {
+    font-size: 2rem;
+    line-height: 1.75;
+  }
+
+  p.small {
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  li.large {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+
+  /* CONTENT */
+
+  section {
+    padding-top: 120px;
+  }
+
+  section.grey {
+    margin-top: 100px;
+  }
+
+  .navigation {
+    margin-top: -40px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .footer p {
+    margin-top: 8px;
+  }
+
+  .visit-cta-section {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .credits {
+    margin-top: -80px;
+  }
+
+  /* IMAGES */
+
+  .img-me {
+    background-image: url('http://jlamour4.github.io/images/me.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 0;
+    width: 100%;
+    padding-top: 10%;
+  }
+
+.img-about-1 {
+  background-image: url('http://jlamour4.github.io/images/piano_as_a_child.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.img-about-2 {
+  background-image: url('http://jlamour4.github.io/images/me_and_djach.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.img-about-3 {
+  background-image: url('http://jlamour4.github.io/images/praying_family.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 113.9%;
+}
+
+.img-featured-project {
+  background-image: url('http://jlamour4.github.io/images/archive_master_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 71%;
+}
