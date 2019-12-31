@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 /* UNIVERSAL */
-
 html,
 body {
   height: 100%;
@@ -11,6 +10,9 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -21,8 +23,8 @@ body.dark {
 .highlight {
   color: #04CA83;
 }
-/* ROOT FONT STYLES */
 
+/* ROOT FONT STYLES */
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #333447;
@@ -30,7 +32,6 @@ body.dark {
 }
 
 /* TYPOGRAPHY */
-
 h1 {
   font-family: 'ObjectSans-Heavy', Helvetica, sans-serif;
   font-size: 1.75rem;
@@ -125,7 +126,6 @@ a:hover {
 }
 
 /* POSITIONING */
-
 .left {
   text-align: left;
 }
@@ -144,7 +144,85 @@ a:hover {
   text-align: justify;
 }
 
+/* ACCESSORY */
+
+.spacer {
+  width: 100%;
+  height: 64px;
+}
+
+.align-r {
+  text-align: right;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.item-1-sm {
+  order: 1
+}
+
+.item-2-sm {
+  order: 2
+}
+
+.item-3-sm {
+  order: 3
+}
+
+.item-4-sm {
+  order: 4
+}
+
+.hidden-l {
+  display: none;
+}
+
 /* CONTENT */
+
+section {
+  padding-top: 48px;
+}
+
+.grey {
+  background: #f4f4f4;
+}
+
+section.grey {
+  margin-top: 24px;
+}
+
+.navigation {
+  margin-top: 0;
+}
+
+.header {
+  margin-bottom: -32px;
+}
+
+.footer {
+  background-color: #161618;
+  margin-top: 0;
+  padding-bottom: 32px;
+}
+
+.footer p {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
 
 .featured-project p,
 .featured-project div {
@@ -163,7 +241,6 @@ a:hover {
 }
 
 /* ==== GRID SYSTEM ==== */
-
 .container {
   width: 90%;
   margin-left: auto;
@@ -245,83 +322,67 @@ a:hover {
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
-  .container {
-    width: 80%;
-  }
+/* IMAGES */
+.img-me {
+  background-image: url('http://jlamour4.github.io/images/me.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
-  .col-1 {
-    width: 4.33%;
-  }
+.img-about-1 {
+  background-image: url('http://jlamour4.github.io/images/piano_as_a_child.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
+}
 
-  .col-2 {
-    width: 12.66%;
-  }
+.img-about-2 {
+  background-image: url('http://jlamour4.github.io/images/me_and_djach.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 113.9%;
+}
 
-  .col-3 {
-    width: 21%;
-  }
+.img-about-3 {
+  background-image: url('http://jlamour4.github.io/images/praying_family.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 67%;
+}
 
-  .col-4 {
-    width: 29.33%;
-  }
-
-  .col-5 {
-    width: 37.66%;
-  }
-
-  .col-6 {
-    width: 46%;
-  }
-
-  .col-7 {
-    width: 54.33%;
-  }
-
-  .col-8 {
-    width: 62.66%;
-  }
-
-  .col-9 {
-    width: 71%;
-  }
-
-  .col-10 {
-    width: 79.33%;
-  }
-
-  .col-11 {
-    width: 87.66%;
-  }
-
-  .col-12 {
-    width: 96%;
-  }
-
-  .hidden-sm {
-    display: block;
-  }
+.img-featured-project {
+  background-image: url('http://jlamour4.github.io/images/archive_master_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
 }
 
 /************************
 ***** MEDIA QUERIES *****
 *************************/
-
 @media only screen and (min-width: 540px) {
 
   /* TYPOGRAPHY */
-
   h1 {
     font-size: 2.125rem;
     line-height: 1.4;
@@ -369,10 +430,67 @@ a:hover {
     line-height: 2;
   }
 
+  /* GRID SYSTEM */
+  .container {
+    width: 94%;
+  }
+
+  .col-1-m {
+    width: 4.33%;
+  }
+
+  .col-2-m {
+    width: 12.66%;
+  }
+
+  .col-3-m {
+    width: 21%;
+  }
+
+  .col-4-m {
+    width: 29.33%;
+  }
+
+  .col-5-m {
+    width: 37.66%;
+  }
+
+  .col-6-m {
+    width: 46%;
+  }
+
+  .col-7-m {
+    width: 54.33%;
+  }
+
+  .col-8-m {
+    width: 62.66%;
+  }
+
+  .col-9-m {
+    width: 71%;
+  }
+
+  .col-10-m {
+    width: 79.33%;
+  }
+
+  .col-11-m {
+    width: 87.66%;
+  }
+
+  .col-12-m {
+    width: 96%;
+  }
+
+  .hidden-m {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 720px) {
 
   /* TYPOGRAPHY */
-
   h1 {
     font-size: 2.3rem;
     line-height: 1.4;
@@ -424,7 +542,6 @@ a:hover {
   }
 
   /* ACCESSORY */
-
   .spacer {
     height: 80px;
   }
@@ -445,40 +562,208 @@ a:hover {
     order: 4
   }
 
-  /* CONTENT */
+  .flex {
+    display: flex;
+  }
 
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex-end {
+    align-items: flex-end;
+  }
+
+  .item-1-sm {
+    order: 1
+  }
+
+  .item-2-sm {
+    order: 2
+  }
+
+  .item-3-sm {
+    order: 3
+  }
+
+  .item-4-sm {
+    order: 4
+  }
+
+  /* CONTENT */
   .footer {
     padding-top: 80px;
     padding-bottom: 40px;
   }
 
-
-  /* IMAGES */
-
-  .img-edu-8 {
-    margin-bottom: 64px;
+  /* GRID SYSTEM */
+  .col-1,
+  .col-1-l {
+    width: 4.33%;
   }
 
-  .img-lyft-gift-1 {
-    margin-top: -80px;
-    margin-bottom: -80px;
+  .col-2,
+  .col-2-l {
+    width: 12.66%;
   }
 
-  .img-lyft-gift-2 {
-    margin-bottom: 80px;
+  .col-3,
+  .col-3-l {
+    width: 21%;
   }
 
-  .img-brooks-1 {
-    margin-top: 100px;
-    margin-bottom: 80px;
+  .col-4,
+  .col-4-l {
+    width: 29.33%;
   }
 
+  .col-5,
+  .col-5-l {
+    width: 37.66%;
+  }
+
+  .col-6,
+  .col-6-l {
+    width: 46%;
+  }
+
+  .col-7,
+  .col-7-l {
+    width: 54.33%;
+  }
+
+  .col-8,
+  .col-8-l {
+    width: 62.66%;
+  }
+
+  .col-9,
+  .col-9-l {
+    width: 71%;
+  }
+
+  .col-10,
+  .col-10-l {
+    width: 79.33%;
+  }
+
+  .col-11,
+  .col-11-l {
+    width: 87.66%;
+  }
+
+  .col-12,
+  .col-12-l {
+    width: 96%;
+  }
+
+  /* NESTED GRID */
+  [class^="n-col"] {
+    margin: 8px 4.3478%;
+  }
+
+  .n-col-1 {
+    width: 9.4202%;
+  }
+
+  .n-col-2 {
+    width: 27.5360%;
+  }
+
+  .n-col-3 {
+    width: 45.6519%;
+  }
+
+  .n-col-4 {
+    width: 63.7677%;
+  }
+
+  .n-col-5 {
+    width: 81.8836%;
+  }
+
+  .n-col-6 {
+    width: 99.9999%;
+  }
+
+  /* END NESTED GRID */
+  .hidden-sm,
+  .hidden-m {
+    display: block;
+  }
+
+  .hidden-l {
+    display: none;
+  }
+
+  .center-sm {
+    margin: 0 2% 0 2%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 90%;
+    max-width: 1600px;
+  }
+
+  .col-1-xl {
+    width: 4.33%;
+  }
+
+  .col-2-xl {
+    width: 12.66%;
+  }
+
+  .col-3-xl {
+    width: 21%;
+  }
+
+  .col-4-xl {
+    width: 29.33%;
+  }
+
+  .col-5-xl {
+    width: 37.66%;
+  }
+
+  .col-6-xl {
+    width: 46%;
+  }
+
+  .col-7-xl {
+    width: 54.33%;
+  }
+
+  .col-8-xl {
+    width: 62.66%;
+  }
+
+  .col-9-xl {
+    width: 71%;
+  }
+
+  .col-10-xl {
+    width: 79.33%;
+  }
+
+  .col-11-xl {
+    width: 87.66%;
+  }
+
+  .col-12-xl {
+    width: 96%;
+  }
+
+  .hidden-l {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1094px) {
 
   /* TYPOGRAPHY */
-
   h1 {
     font-size: 2.5rem;
     line-height: 1.4;
@@ -526,7 +811,6 @@ a:hover {
   }
 
   /* CONTENT */
-
   section {
     padding-top: 120px;
   }
@@ -558,49 +842,4 @@ a:hover {
     margin-top: -80px;
   }
 
-  /* IMAGES */
-
-  .img-me {
-    background-image: url('http://jlamour4.github.io/images/me.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 0;
-    width: 100%;
-    padding-top: 10%;
-  }
-
-.img-about-1 {
-  background-image: url('http://jlamour4.github.io/images/piano_as_a_child.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 0;
-  width: 100%;
-  padding-top: 10%;
-}
-
-.img-about-2 {
-  background-image: url('http://jlamour4.github.io/images/me_and_djach.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 0;
-  width: 100%;
-  padding-top: 10%;
-}
-
-.img-about-3 {
-  background-image: url('http://jlamour4.github.io/images/praying_family.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 0;
-  width: 100%;
-  padding-top: 113.9%;
-}
-
-.img-featured-project {
-  background-image: url('http://jlamour4.github.io/images/archive_master_logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 0;
-  width: 100%;
-  padding-top: 71%;
 }
