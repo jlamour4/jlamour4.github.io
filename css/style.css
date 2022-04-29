@@ -254,10 +254,10 @@ section.grey {
 }
 
 .featured-project:hover div {
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: scale(0.90);
+  -moz-transform: scale(0.90);
+  -o-transform: scale(0.90);
+  transform: scale(0.90);
 }
 
 .scale85 {
