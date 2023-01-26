@@ -26,7 +26,7 @@ body.light {
 }
 
 .tile {
-  background-color: #2d2d2f;
+  /* background-color: #2d2d2f; */
   margin: auto;
 }
 
@@ -140,7 +140,7 @@ a:hover {
 }
 
 .bibleseekBlue {
-  color: #758ab5;
+  color: #9cadd3;
 }
 
 .text-overflow-ellipsis {
@@ -458,6 +458,7 @@ section.grey {
   background-image: url('http://jlamour4.github.io/images/bibleseek.png');
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #758ab5;
   height: 0;
   width: 100%;
   padding-top: 70%;
@@ -465,13 +466,51 @@ section.grey {
 }
 
 .img-cmui-project {
-  background-image: url('https://www2.nbme.org/learningportal/z_resources/images/nuxeo/cmui-homepage_thumb_500_0.png');
+  background-image: url('https://www2.nbme.org/learningportal/z_resources/images/nuxeo/cmui-homepage.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #004976;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
+}
+
+.img-freelance-1 {
+  background-image: url('../images/archive_master_logo.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 0;
   width: 100%;
   padding-top: 70%;
 }
+
+.img-freelance-2 {
+  background-image: url('../images/josiah-poster.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
+}
+
+.img-freelance-3 {
+  background-image: url('../images/hcbakery.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
+}
+
+.img-freelance-4 {
+  background-image: url('../images/airplanes.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-top: 70%;
+}
+
 
 /*Thumbnail Background*/
 .thumb {
