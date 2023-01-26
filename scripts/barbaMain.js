@@ -27,8 +27,8 @@ var FadeTransition = Barba.BaseTransition.extend({
         opacity: 0
       }, 400, function() {
 
-      }).promise(),
-  },
+      }).promise()
+},
 
   fadeIn: function() {
     /**
